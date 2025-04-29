@@ -13,7 +13,7 @@ import { EducationSection } from "@/components/education-section";
 import { CertificatesSection } from "@/components/certificates-section";
 import { ActivitiesSection } from "@/components/activities-section";
 import { ToolboxSection } from "@/components/toolbox-section";
-
+import profilePic from "./assets/profilePic.png";
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
@@ -40,11 +40,11 @@ function App() {
         message = "Opening email client...";
         break;
       case "linkedin":
-        window.open("https://linkedin.com/in/yosr-mekki", "_blank");
+        window.open("https://www.linkedin.com/in/yosr-mekki-285279363/", "_blank");
         message = "Opening LinkedIn profile...";
         break;
       case "github":
-        window.open("https://github.com", "_blank");
+        window.open("https://github.com/YosrMekkii", "_blank");
         message = "Opening GitHub profile...";
         break;
     }
@@ -116,7 +116,7 @@ function App() {
             <img 
               className="w-full h-full object-cover"
               alt="Profile photo"
-              src="https://images.unsplash.com/photo-1544212408-c711b7c19b92" />
+              src={profilePic} />
           </motion.div>
         </div>
       </motion.section>
